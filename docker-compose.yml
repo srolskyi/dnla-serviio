@@ -1,0 +1,13 @@
+version: '3'
+services:
+        dnla:
+                image: arch_serviio
+                volumes: 
+                        - /home/storage/media:/opt/media
+                ports:
+                        - "1900:1900/udp"
+                        - "8895:8895"
+                        - "2869:2869/tcp"
+                        - "23423:23423"
+                network_mode: "host"
+
