@@ -8,7 +8,7 @@ MAINTAINER Sergii Rolskyi
 ENV SERVIIO_URL http://download.serviio.org/releases/serviio-1.9.1-linux.tar.gz
 
 #Update and install needed package
-RUN pacman -Syu && pacman -S wget ffmpeg java-runtime-common jre8-openjdk-headless dcraw --noconfirm
+RUN pacman -Sy && pacman -S wget ffmpeg java-runtime-common jre8-openjdk-headless dcraw --noconfirm
 
 WORKDIR /tmp
 
