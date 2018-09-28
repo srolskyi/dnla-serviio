@@ -1,9 +1,10 @@
 version: '3'
 services:
         dnla:
-                image: srolskyi/dnla-serviio
+                image: srolskyi/dnla-serviio:1.9.2
                 volumes: 
-                        - /home/media:/opt/media
+                        - /home/serg/Videos:/opt/media
+                        - /home/serg/Public:/opt/media/unsorted
                 ports:
                         - "1900:1900/udp"
                         - "8895:8895"
