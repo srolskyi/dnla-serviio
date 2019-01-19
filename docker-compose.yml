@@ -3,8 +3,8 @@ services:
         dnla:
                 image: srolskyi/dnla-serviio:1.9.2
                 volumes: 
-                        - /home/serg/Videos:/opt/media
-                        - /home/serg/Public:/opt/media/unsorted
+                        - /home/serg/Videos/HDD-1/:/opt/media
+                        - /home/serg/Videos/dnla/:/opt/serviio/library:rw
                 ports:
                         - "1900:1900/udp"
                         - "8895:8895"

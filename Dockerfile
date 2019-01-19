@@ -5,7 +5,7 @@ FROM base/archlinux
 MAINTAINER Sergii Rolskyi
 
 # Download latest Serviio aplication
-ENV SERVIIO_URL http://download.serviio.org/releases/serviio-1.9.2-linux.tar.gz
+ENV SERVIIO_URL http://download.serviio.org/releases/serviio-1.10.1-linux.tar.gz
 
 #Update and install needed package
 RUN pacman -Sy && pacman -S wget ffmpeg java-runtime-common jre8-openjdk-headless dcraw --noconfirm
