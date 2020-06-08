@@ -1,6 +1,6 @@
 #DNLA-server serviio, based on Arch linux
 
-FROM base/archlinux
+FROM archlinux/base
 
 MAINTAINER Sergii Rolskyi
 
